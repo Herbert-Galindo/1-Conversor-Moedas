@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS1 - Conversor de Moedas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;1,300&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="Head">
+        <h1>1 - Conversor de Moedas</h1>
+    </div>
+
+    <div id="Head-First">
+        <p class="Paragrafo">Coverter <b>de:</b></p>
+        <Select class="select">
+            <option> R$ Real Brasileiro</option>
+        </Select>
+
+        <p class="Paragrafo">Coverter <b>para:</b></p>
+        <Select class="select" id = "select-moedas">
+            <option>US$ Dólar Americano</option>
+            <option>€ Euro</option>
+        </select>
+
+        <p>Valor:</p>
+        <input id="input" placeholder="R$ 10.000,00" type="number">
+
+        <button id="button">Converter!</button>
+
+        <div id="Box-Internal">
+            <div class="box-little">
+
+                <img src="./img/brasil.png">
+                <p class="Paragrafo">Real</p>
+                <p class="Money" id = "texto-real">R$ 10.000,00</p>
+            </div>
+
+            <img id= "seta" src="./img/seta.png">
+
+            <div class="box-little">
+                <img id= "bandeira-moedas" src="./img/eua.png">
+                <p class="Paragrafo" id="texto-moedas">Dólar americano</p>
+                <p class="Money" id = "input-moedas">$ 2.000,00</p>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<style>
+
+    body {
+        background: black;
+    }
+    * {
+        font-family: 'Roboto', sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    #Head {
+        background: #9657A5;
+        width: 375px;
+        height: 66px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 70px;
+    }
+
+    #Head-First {
+        background: #e5e5e5;
+        width: 375px;
+        padding: 24px;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    h1 {
+        color: #f4f4f4;
+        font-size: 24px;
+        text-align-last: center;
+        padding-top: 19px;
+    }
+
+    .Paragrafo {
+        margin-bottom: 6px;
+        color: #777777;
+
+    }
+
+    .select {
+        background: #ffffff;
+        border: 1px solid #888888;
+        border-radius: 4px;
+        height: 48px;
+        width: 327px;
+        margin-bottom: 23px;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+        padding-left: 16px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #input {
+        height: 48px;
+        width: 327px;
+        background: #ffffff;
+        border: 1px solid #888888;
+        border-radius: 4px;
+        margin-bottom: 23px;
+        outline: none;
+        padding-left: 16px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #button {
+        background: #cdd728;
+        border-radius: 25px;
+        display: block;
+        height: 48px;
+        width: 327px;
+        cursor: pointer;
+        border: none;
+        margin-bottom: 23px;
+        font-size: 18px;
+        font-weight: bold;
+        outline: none;
+
+    }
+    #button:active{
+        opacity: 0.6;
+    }
+    
+
+    #Box-Internal {
+        border: 1px solid #9657a5;
+        border-radius: 4px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        
+    }
+
+    .box-little {
+        text-align: center;
+    }
+
+    #seta{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+    .Money{
+        font-weight: bold;
+        font-size: 20px;
+    }
+</style>
+
+<script src="./Scripts.js">
+    
+</script>
+
+</html>
